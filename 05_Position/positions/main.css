@@ -1,0 +1,51 @@
+html {
+  background: #b3b3b3;
+  padding: 15px;
+  border: 5px solid white;
+  margin: 15px;
+  height: 2000px;
+  overflow: hidden;
+}
+
+body {
+  background: #fa923f;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 0;
+  overflow: hidden;
+}
+
+.parent {
+  background: white;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 0;
+  /*Pasa los padres adelante de los hijos*/
+  /* overflow: hidden; */
+  position: relative;
+  top: 200px;
+}
+
+.parent div,
+.parent span {
+  background: rgb(105, 105, 109);
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.parent .child-1 {
+  /* Hace como que el elemento no existe para los demas como si estubiera en otra capa*/
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  box-sizing: border-box; */
+
+  /* Queda fuera del flujo del documento y el punto cero queda donde estaba originalmente*/
+  /* position: relative;
+  top: 180px;
+  left: 50px; */
+}

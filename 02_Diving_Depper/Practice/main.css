@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#product-overview {
+  /* Imagen de fondo */
+  background: url("freedom.jpg");
+  padding: 10px;
+  width: 100%;
+  height: 528px;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+}
+
+.main-header > div {
+  display: inline-block;
+  /* Alinear de forma vertical */
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  /* Quitar las decoraciones */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  /* Funciones para calcular entre medidad */
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  /* Cambia la forma en la que se muestran los elementos inline o block */
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  /* Negritas */
+  font-weight: bold;
+  padding: 3px;
+}
+
+/* Seudo clase cuando se pasa ensima con el mouse */
+/* Groups */
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+/* Seudo clase cuando se activa un elemento */
+/* .main-nav__item a:active {
+  color: white;
+} */
+
+/* Seudo elemeto */
+p::first-letter {
+  color: red;
+  font-size: 20px;
+}
+
+/* .main-nav__item a::after {
+  content: "(Link)";
+  color: red;
+} */
+
+.main-nav__item--cta a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  /* Borde de la caja para hacerla circular */
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
